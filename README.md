@@ -126,15 +126,15 @@
 
 <h3>Status do Deploy</h3>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5da804d2-6678-40ce-a5f0-16c1b6aee591/deploy-status)](https://app.netlify.com/sites/casa-do-codigo-vuejs/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9473effc-c790-45b0-9883-a82e86294ef4/deploy-status)](https://app.netlify.com/sites/casa-do-codigo-vuejs/deploys)
 
 <hr>
 
 <h3>Tempo Estudando o livro</h3>
 
 <p>
- <a href="https://wakatime.com/badge/github/EdiJunior88/Casa_do_Coddigo_VueJS">
-  <img src="https://wakatime.com/badge/github/EdiJunior88/Casa_do_Coddigo_VueJS.svg" alt="wakatime">
+ <a href="https://wakatime.com/badge/github/EdiJunior88/Casa_do_Codigo_VueJS">
+  <img src="https://wakatime.com/badge/github/EdiJunior88/Casa_do_Codigo_VueJS.svg" alt="wakatime">
  </a>
 </p>
 
