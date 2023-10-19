@@ -23,7 +23,7 @@
   <li>Revisão</li>
 </ul>
 
-<strong>Seu primeiro componente com Vue.js</strong>ong>
+<strong>Seu primeiro componente com Vue.js</strong>
 <ul>
   <li>Instalando o Vue.js</li>
   <li>Escrevendo seu primeiro componente</li>
