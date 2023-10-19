@@ -1,4 +1,4 @@
-<img src="img-readme/casa_do_codigo.jpg" width="45%">
+<img src="img-readme/casa_do_codigo.jpg" width="35%">
 <h2>Vue.js Construa Aplicações Incríveis</h2>
 
 <p>O modo como desenvolvemos código front-end mudou muito ao longo dos últimos anos. Mais do que dar as ferramentas necessárias para desenvolver, os frameworks de componentes reativos para interfaces web modernas vieram nos ajudar com padrões e reaproveitamento de código. Vue.js, ou simplesmente Vue, é uma biblioteca moderna de desenvolvimento front-end, uma lib JavaScript para componentes reativos para web. Ele ganhou muita visibilidade no mercado após ser adotado como padrão pelo Laravel, tendo a possibilidade de ser utilizado em qualquer projeto que possua front-end, independente da linguagem de programação escolhida.</p>
