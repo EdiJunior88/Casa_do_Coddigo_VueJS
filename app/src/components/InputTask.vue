@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { reactive } from 'vue'
 import { Task } from '../models/Task'
 
-let task = ref(new Task())
+let task = reactive(new Task())
 
 function addTask(event) {
-  task.value.completed = false
-  task.value.title = event.target.value
+  task.completed = false
+  task.title = event.target.value
   console.log(task)
 }
 </script>

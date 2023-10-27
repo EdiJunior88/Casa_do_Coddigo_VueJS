@@ -1,5 +1,17 @@
 <script setup>
+import { reactive } from 'vue'
 import InputTask from './components/InputTask.vue'
+import TaskList from './components/TaskList.vue'
+import { Task } from './models/Task'
+
+let tasks = reactive([])
+let task = reactive(new Task())
+
+task.completed = false
+task.title = 'Tarefa'
+tasks.push(task)
+tasks.push(task)
+tasks.push(task)
 </script>
 
 <template>
@@ -11,7 +23,8 @@ import InputTask from './components/InputTask.vue'
         Tarefas
       </h1>
       <InputTask></InputTask>
-    </header> 
+      <TaskList :todo-list="tasks"></TaskList>
+    </header>
   </section>
 </template>
 
