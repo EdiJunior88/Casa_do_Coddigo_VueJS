@@ -1,4 +1,8 @@
 <script setup>
+
+//A função defineProps é usada para definir as 
+//propriedades esperadas no componente. Neste caso, 
+//espera-se uma propriedade chamada todoList do tipo Array
 defineProps({
   todoList: Array
 })

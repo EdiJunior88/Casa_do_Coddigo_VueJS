@@ -3,8 +3,14 @@ import { reactive } from 'vue'
 import InputTask from './components/InputTask.vue'
 import TaskList from './components/TaskList.vue'
 
+// A variável tasks é inicializada como um array reativo vazio.
+// Isso significa que qualquer modificação neste array irá
+// disparar atualizações reativas no Vue.js.
 let tasks = reactive([])
 
+// A função addTask é usada para adicionar novas tarefas ao array tasks.
+// Como tasks é um array reativo, qualquer chamada a addTask irá desencadear
+// uma atualização reativa.
 function addTask(task) {
   tasks.push(task)
 }

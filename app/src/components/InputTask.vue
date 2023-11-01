@@ -2,14 +2,24 @@
 import { reactive } from 'vue'
 import { Task } from '../models/Task'
 
+//A função defineProps define as propriedades
+//que serão passadas ao componente.
+//Neste caso, é esperado que uma função
+//chamada newTask seja passada como propriedade
 defineProps({
   newTask: Function
 })
 
+// A função defineEmits é usada para definir os eventos 
+// que o componente pode emitir. Neste caso, o componente 
+// pode emitir um evento chamado newTask
 const emits = defineEmits(['newTask'])
 
+// O objeto Task é criado e transformado em um objeto reativo. 
+// Este objeto será usado para armazenar os dados da nova tarefa.
 let task = reactive(new Task())
 
+//A função addTask é definida para adicionar uma nova tarefa.
 function addTask(event) {
   let value = event.target.value
   task.completed = false
