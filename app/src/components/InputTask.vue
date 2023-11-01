@@ -2,12 +2,20 @@
 import { reactive } from 'vue'
 import { Task } from '../models/Task'
 
+defineProps({
+  newTask: Function
+})
+
+const emits = defineEmits(['newTask'])
+
 let task = reactive(new Task())
 
 function addTask(event) {
+  let value = event.target.value
   task.completed = false
-  task.title = event.target.value
-  console.log(task)
+  task.title = value
+  emits('newTask', task)
+  event.target.value = ''
 }
 </script>
 

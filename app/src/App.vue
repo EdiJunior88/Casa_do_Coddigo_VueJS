@@ -2,16 +2,12 @@
 import { reactive } from 'vue'
 import InputTask from './components/InputTask.vue'
 import TaskList from './components/TaskList.vue'
-import { Task } from './models/Task'
 
 let tasks = reactive([])
-let task = reactive(new Task())
 
-task.completed = false
-task.title = 'Tarefa'
-tasks.push(task)
-tasks.push(task)
-tasks.push(task)
+function addTask(task) {
+  tasks.push(task)
+}
 </script>
 
 <template>
@@ -22,7 +18,7 @@ tasks.push(task)
       <h1 class="absolute top-[-155px] w-full text-center text-8xl text-red-300 font-thin">
         Tarefas
       </h1>
-      <InputTask></InputTask>
+      <InputTask @newTask="addTask"></InputTask>
       <TaskList :todo-list="tasks"></TaskList>
     </header>
   </section>
