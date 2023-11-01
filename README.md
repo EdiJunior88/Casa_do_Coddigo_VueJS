@@ -1,5 +1,7 @@
 <strong><h3>⚠️ ATENÇÃO ⚠️ Leia a <i>issue</i> aberta antes de continuar a utilizar esse aplicativo</h3></strong>
 
+<br>
+
 <img src="img-readme/casa_do_codigo.jpg" width="35%">
 <h2>Vue.js Construa Aplicações Incríveis</h2>
 
