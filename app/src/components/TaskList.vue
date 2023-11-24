@@ -42,8 +42,7 @@ function completeTasks(task) {
           class="toggle ml-4 mr-5 border border-solid border-gray-500"
           @click="completeTasks(todo)"
         />
-        <label v-if="todo.completed" class="todo-completed">{{ todo.title }}</label>
-        <label v-else>{{ todo.title }}</label>
+        <label :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</label>
       </div>
     </li>
   </ul>
