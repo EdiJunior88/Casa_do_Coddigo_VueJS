@@ -39,7 +39,7 @@ function completeTasks(task) {
       <div class="flex items-center">
         <input
           type="checkbox"
-          class="toggle ml-4 mr-5 border border-solid border-gray-500"
+          class="toggle ml-4 mr-3 border border-solid border-gray-500"
           @click="completeTasks(todo)"
         />
         <label :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</label>
