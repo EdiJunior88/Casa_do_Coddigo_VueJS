@@ -28,6 +28,7 @@
 </ul>
 
 <strong>Seu primeiro componente com Vue.js</strong>
+
 <ul>
   <li>Instalando o Vue.js</li>
   <li>Escrevendo seu primeiro componente</li>
@@ -35,6 +36,7 @@
 </ul>
 
 <strong>Construindo nossa aplicação</strong>
+
 <ul>
   <li>Entendendo o projeto</li>
   <li>Iniciando o projeto</li>
@@ -43,6 +45,7 @@
 </ul>
 
 <strong>Comunicação entre componentes</strong>
+
 <ul>
   <li>Comunicação por propriedades</li>
   <li>A diretiva V-FOR</li>
@@ -53,6 +56,7 @@
 </ul>
 
 <strong>Renderização condicional</strong>
+
 <ul>
   <li>V-IF</li>
   <li>V-SHOW</li>
@@ -64,6 +68,7 @@
 </ul>
 
 <strong>Testes unitários</strong>
+
 <ul>
   <li>A importância dos testes</li>
   <li>Configurando o ambiente</li>
@@ -73,6 +78,7 @@
 </ul>
 
 <strong>Testes avançados e refatoração</strong>
+
 <ul>
   <li>Mais testes para nosso Input</li>
   <li>Escrevendo bons testes</li>
@@ -80,6 +86,7 @@
 </ul>
 
 <strong>Rotas</strong>
+
 <ul>
   <li>vue-router, rotas com Vue.js</li>
   <li>Transições</li>
@@ -88,6 +95,7 @@
 </ul>
 
 <strong>Requisições assíncronas</strong>
+
 <ul>
   <li>Aprendendo a debuggar com Vue.js Devtools</li>
   <li>Mostrando o endereço</li>
@@ -95,6 +103,7 @@
 </ul>
 
 <strong>Diretivas customizadas</strong>
+
 <ul>
   <li>Adicionando máscara</li>
   <li>Construindo sua primeira diretiva</li>
@@ -103,6 +112,7 @@
 </ul>
 
 <strong>Distribuindo conteúdo com Slots</strong>
+
 <ul>
   <li>Usando Slots</li>
   <li>Named Slots</li>
@@ -111,6 +121,7 @@
 </ul>
 
 <strong>Vuex</strong>
+
 <ul>
   <li>O que é Vuex?</li>
   <li>Quando usar Vuex?</li>
@@ -122,6 +133,7 @@
 </ul>
 
 <strong>Conclusão</strong>
+
 <ul>
   <li>Para saber mais</li>
 </ul>
