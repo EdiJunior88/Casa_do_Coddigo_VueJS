@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 import { reactive } from 'vue'
 import InputTask from './components/InputTask.vue'
 import TaskList from './components/TaskList.vue'
