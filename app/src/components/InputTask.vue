@@ -16,15 +16,15 @@ const emits = defineEmits(['newTask'])
 
 // A função addTask é definida para adicionar uma nova tarefa.
 function addTask(event) {
-  let value = event.target.value
-  let task = createTask(value)
+  const value = event.target.value
+  const task = createTask(value)
   broadcast(task)
   clearField(event)
 }
 
 // A função createTask é usada para criar uma nova tarefa.
 function createTask(value) {
-  let task = new Task()
+  const task = new Task()
   task.completed = false
   task.title = value
   return task
@@ -52,5 +52,3 @@ function broadcast(task) {
     />
   </div>
 </template>
-
-<style lang="css" scoped></style>

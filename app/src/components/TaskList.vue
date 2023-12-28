@@ -16,7 +16,7 @@ const todoList = ref(props.todoList)
 // chamada sortedTasks. Esta propriedade retorna o array todoList
 // ordenado alfabeticamente por título.
 const sortedTasks = computed(() => {
-  let sorted = todoList
+  const sorted = todoList
   return sorted.value.sort(function (a, b) {
     if (a.title < b.title) return -1
     if (a.title > b.title) return 1
