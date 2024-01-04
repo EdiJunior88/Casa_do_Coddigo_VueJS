@@ -14,7 +14,7 @@ app.mount('#app')
 // com o array de tarefas passado como propriedade
 // e se o mesmo renderiza corretamente
 describe('TaskList', () => {
-  let vm
+  let vm = {}
 
   // beforeEach é uma função de configuração que é executada
   // antes de cada caso de teste dentro do bloco describe
@@ -23,15 +23,15 @@ describe('TaskList', () => {
   // Em seguida, monta o componente TaskList
   // passando taskList como um prop chamado todoList
   beforeEach(() => {
-    let taskList = []
+    const taskList = []
 
-    let task = new Task()
+    const task = new Task()
     task.title = 'Comprar Frango'
 
-    let task2 = new Task()
+    const task2 = new Task()
     task2.title = 'Comprar Batata Doce'
 
-    let task3 = new Task()
+    const task3 = new Task()
     task3.title = 'Ficar Monstro'
 
     taskList.push(task)
