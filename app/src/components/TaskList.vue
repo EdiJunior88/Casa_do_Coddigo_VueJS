@@ -1,5 +1,5 @@
 <script setup lang="js">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 
 // A função defineProps é usada para definir as
 // propriedades esperadas no componente. Neste caso,
@@ -8,16 +8,18 @@ const props = defineProps({
   todoList: Array
 })
 
-// Aqui, ref é usada para criar uma referência
-// reativa ao array todoList.
-const todoList = ref(props.todoList)
-
 // Aqui, computed é usada para criar uma propriedade computada
 // chamada sortedTasks. Esta propriedade retorna o array todoList
 // ordenado alfabeticamente por título.
 const sortedTasks = computed(() => {
-  const sorted = todoList
-  return sorted.value.sort(function (a, b) {
+  // Verifica se a propriedade todoList existe e se é um array,
+  // Caso não exista ou seja um array vazio, retorna uma lista vazia
+  if (!props.todoList || !Array.isArray(props.todoList)) {
+    return []
+  }
+
+  const sorted = props.todoList
+  return sorted.sort(function (a, b) {
     if (a.title < b.title) return -1
     if (a.title > b.title) return 1
     return 0
