@@ -6,15 +6,9 @@
       <h1 class="text-8xl text-red-300 font-thin">Tarefas</h1>
 
       <div class="text-xl text-center my-10">
-        <RouterLink to="/" v-if="$route.path !== '/'">Home</RouterLink>
+        <RouterLink to="/" v-if="$route.path !== '/'">Ver Tarefas</RouterLink>
         <RouterLink to="/cep" v-if="$route.path !== '/cep'">Verificar CEP</RouterLink>
       </div>
     </header>
   </section>
 </template>
-
-<style lang="css">
-html {
-  background: #f5f5f5;
-}
-</style>

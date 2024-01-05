@@ -4,6 +4,8 @@ import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
-  <HomeView />
-  <RouterView />
+  <TransitionGroup name="fade">
+    <HomeView key="home" />
+    <RouterView key="router" />
+  </TransitionGroup>
 </template>
