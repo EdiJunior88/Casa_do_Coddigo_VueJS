@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const App = () => import('../App.vue')
-const CepChecker = () => import('../CepChecker.vue')
+const HomePage = () => import('@/page/HomePage.vue')
+const CepChecker = () => import('@/views/CepChecker.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: App
+      component: HomePage
     },
     {
       path: '/cep',

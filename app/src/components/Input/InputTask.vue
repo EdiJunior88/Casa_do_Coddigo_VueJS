@@ -1,5 +1,5 @@
 <script setup lang="js">
-import { Task } from '../models/Task'
+import { Task } from '@/models/Task'
 
 // A função defineProps define as propriedades
 // que serão passadas ao componente.

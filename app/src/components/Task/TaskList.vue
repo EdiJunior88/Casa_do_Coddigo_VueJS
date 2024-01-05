@@ -33,20 +33,22 @@ function completeTasks(task) {
 
 <template>
   <ul class="list-none -mt-1.5 p-0">
-    <li
-      v-for="todo in sortedTasks"
-      :key="todo.id"
-      class="w-full relative m-0 -mt-1 text-2xl font-normal bg-white text-slate-700 py-4 border border-solid border-gray-200 first:border-t-0 last:border-b-0 shadow-lg rounded-b-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
-    >
-      <div class="flex items-center">
-        <input
-          type="checkbox"
-          class="toggle ml-4 mr-3 border border-solid border-gray-500"
-          @click="completeTasks(todo)"
-        />
-        <label :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</label>
-      </div>
-    </li>
+    <TransitionGroup name="list">
+      <li
+        v-for="todo in sortedTasks"
+        :key="todo"
+        class="w-full relative m-0 -mt-1 text-2xl font-normal bg-white text-slate-700 py-4 border border-solid border-gray-200 first:border-t-0 last:border-b-0 shadow-lg rounded-b-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
+      >
+        <div class="flex items-center">
+          <input
+            type="checkbox"
+            class="toggle ml-4 mr-3 border border-solid border-gray-500"
+            @click="completeTasks(todo)"
+          />
+          <label :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</label>
+        </div>
+      </li>
+    </TransitionGroup>
   </ul>
 </template>
 
@@ -81,5 +83,15 @@ function completeTasks(task) {
 
 .todo-completed {
   text-decoration: line-through;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
 }
 </style>
