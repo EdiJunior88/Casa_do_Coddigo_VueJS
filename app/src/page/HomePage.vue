@@ -18,7 +18,7 @@ function addTask(task) {
 
 <template>
   <section
-    class="container mx-auto min-w-64 max-w-xl flex justify-center items-center font-['Helvetica Neue'] font-light text-sm text-slate-500 leading-snug  mb-10 relative focus:outline-none"
+    class="container mx-auto min-w-64 max-w-xl flex justify-center items-center font-['Helvetica Neue'] font-light text-sm text-slate-500 leading-snug mb-10 relative focus:outline-none"
   >
     <header class="w-full">
       <InputTask @newTask="addTask"></InputTask>
