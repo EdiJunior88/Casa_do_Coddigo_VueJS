@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 import { RouterView } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 </script>

@@ -18,6 +18,8 @@ const sortedTasks = computed(() => {
     return []
   }
 
+  // A função recebe uma lista (props.todoList) de tarefas
+  // e ordena alfabeticamente por título (title) de cada objeto na lista
   const sorted = props.todoList
   return sorted.sort(function (a, b) {
     if (a.title < b.title) return -1
@@ -26,6 +28,8 @@ const sortedTasks = computed(() => {
   })
 })
 
+// A função recebe uma tarefa (task) e a altera de acordo com o argumento
+// completando ou não a tarefa (alternando o estado)
 function completeTasks(task) {
   task.completed = !task.completed
 }
@@ -37,7 +41,7 @@ function completeTasks(task) {
       <li
         v-for="todo in sortedTasks"
         :key="todo"
-        class="w-full relative m-0 -mt-1 text-2xl font-normal bg-white text-slate-700 py-4 border border-solid border-gray-200 first:border-t-0 last:border-b-0 shadow-lg rounded-b-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
+        class="w-full relative m-0 -mt-1 text-2xl font-normal bg-white text-violet-900 py-4 border border-solid border-gray-200 first:border-t-0 last:border-b-0 shadow-lg rounded-b-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
       >
         <div class="flex items-center">
           <input

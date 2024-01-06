@@ -26,9 +26,3 @@ function addTask(task) {
     </header>
   </section>
 </template>
-
-<style lang="css">
-html {
-  background: #f5f5f5;
-}
-</style>
