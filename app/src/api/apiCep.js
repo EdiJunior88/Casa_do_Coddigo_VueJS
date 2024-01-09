@@ -11,7 +11,8 @@ const apiCep = async (value) => {
     const response = await axios.get(`https://api.postmon.com.br/v1/cep/${value}`)
     return response.data
   } catch (error) {
-    console.log(error)
+    return null
+    // console.log(error)
   }
 }
 

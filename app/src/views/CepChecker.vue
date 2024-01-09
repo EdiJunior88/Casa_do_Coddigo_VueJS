@@ -5,18 +5,39 @@ import apiCep from '@/api/apiCep'
 // Cria uma variável reativa para armazenar o resultado da requisição
 const address = ref({})
 
+// Cria uma variável reativa para armazenar uma mensagem de erro (API)
+const errorMessageAPI = ref('')
+
+function maskCep(value) {
+  return value
+    .replace(/\D/g, '') // Remove tudo o que não é dígito
+    .replace(/^(\d{5})(\d)/, '$1-$2') // Insere o hífen
+}
+
 // Define uma função assíncrona para verificar o CEP
 // e recebe um parâmetro "event".
 // Em seguida chama a função apiCep para realizar
 // a requisição da API e armazena o resultado na variável "address"
 async function checkCep(event) {
-  const value = event.target.value
+  let value = event.target.value
+  value = maskCep(value)
+  event.target.value = value // Atualiza o valor do input com a máscara aplicada
+
   try {
-    const data = await apiCep(value)
+    const data = await apiCep(value.replace('-', '')) // Remove o hífen antes de enviar
+
+    // Se o CEP for inválido lança um erro
+    if (!data || Object.keys(data).length === 0) {
+      throw new Error('CEP inválido')
+    }
+
     address.value = data
+    errorMessageAPI.value = ''
     // console.log(data)
   } catch (error) {
-    console.log(error)
+    errorMessageAPI.value = 'CEP inválido'
+    address.value = {}
+    // console.log(error)
   }
 }
 
@@ -38,27 +59,31 @@ const vFocus = {
     class="container mx-auto min-w-64 max-w-xl flex flex-col justify-center items-center font-['Helvetica Neue'] font-light text-sm text-slate-500 leading-snug mb-10 relative focus:outline-none"
   >
     <input
+      @input="(event) => (event.target.value = maskCep(event.target.value))"
       @keyup.enter="checkCep"
       v-focus
+      maxlength="9"
       type="text"
       name="cep"
       id="cep"
-      class="new-todo relative m-0 text-2xl leading-snug italic font-light text-slate-700 p-4 text-center border border-solid border-gray-200 shadow-lg rounded-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
+      class="new-todo relative mb-10 text-2xl leading-snug italic font-light text-slate-700 p-4 text-center border border-solid border-gray-200 shadow-lg rounded-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
       placeholder="Digite seu CEP"
     />
 
-    <TransitionGroup name="slide-fade">
-      <div
-        key="address"
-        v-show="hasAddress()"
-        class="text-xl text-center text-violet-950 my-10 leading-relaxed"
-      >
-        <p><span class="font-bold">Rua</span>: {{ address.logradouro }}</p>
-        <p><span class="font-bold">Bairro</span>: {{ address.bairro }}</p>
-        <p><span class="font-bold">Cidade</span>: {{ address.cidade }}</p>
-        <p><span class="font-bold">Estado</span>: {{ address.estado }}</p>
-      </div>
-    </TransitionGroup>
+    <div v-if="errorMessageAPI" class="text-xl text-center text-green-500 leading-relaxed">
+      <p class="font-bold">{{ errorMessageAPI }}</p>
+    </div>
+
+    <div
+      key="address"
+      v-show="hasAddress()"
+      class="text-xl text-center text-violet-950 leading-relaxed"
+    >
+      <p><span class="font-bold">Rua</span>: {{ address.logradouro }}</p>
+      <p><span class="font-bold">Bairro</span>: {{ address.bairro }}</p>
+      <p><span class="font-bold">Cidade</span>: {{ address.cidade }}</p>
+      <p><span class="font-bold">Estado</span>: {{ address.estado }}</p>
+    </div>
   </section>
 </template>
 
