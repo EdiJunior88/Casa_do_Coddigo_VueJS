@@ -2,6 +2,7 @@
 import { reactive } from 'vue'
 import InputTask from '@/components/Input/InputTask.vue'
 import TaskList from '@/components/Task/TaskList.vue'
+import Footer from '@/components/Footer/FooterComponent.vue'
 
 // A variável tasks é inicializada como um array reativo vazio.
 // Isso significa que qualquer modificação neste array irá
@@ -23,6 +24,7 @@ function addTask(task) {
     <header class="w-full">
       <InputTask @newTask="addTask"></InputTask>
       <TaskList :todo-list="tasks"></TaskList>
+      <Footer />
     </header>
   </section>
 </template>

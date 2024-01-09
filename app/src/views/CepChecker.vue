@@ -1,6 +1,7 @@
 <script setup lang="js">
 import { ref } from 'vue'
 import apiCep from '@/api/apiCep'
+import Footer from '@/components/Footer/FooterComponent.vue'
 
 // Cria uma variável reativa para armazenar o resultado da requisição
 const address = ref({})
@@ -84,6 +85,11 @@ const vFocus = {
       <p><span class="font-bold">Cidade</span>: {{ address.cidade }}</p>
       <p><span class="font-bold">Estado</span>: {{ address.estado }}</p>
     </div>
+
+    <Footer>
+      <p>Cep Checker © MIT License - 2024</p>
+      <p>Cep Checker is part of ToDo List</p>
+    </Footer>
   </section>
 </template>
 
