@@ -1,6 +1,6 @@
 <script setup lang="js">
 import { ref } from 'vue'
-import apiCep from '../api/apiCep'
+import apiCep from '@/api/apiCep'
 
 // Cria uma variável reativa para armazenar o resultado da requisição
 const address = ref({})
@@ -25,6 +25,12 @@ async function checkCep(event) {
 function hasAddress() {
   return Object.keys(address.value).length > 0
 }
+
+// Define uma diretiva Vue chamada vFocus que automaticamente coloca o foco
+// no elemento ao qual é aplicada quando o elemento é montado (inserido no DOM).
+const vFocus = {
+  mounted: (el) => el.focus()
+}
 </script>
 
 <template>
@@ -33,6 +39,7 @@ function hasAddress() {
   >
     <input
       @keyup.enter="checkCep"
+      v-focus
       type="text"
       name="cep"
       id="cep"
