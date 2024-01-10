@@ -146,6 +146,12 @@
 
 <hr>
 
+<h3>Status Issue</h3>
+
+[![DeepSource](https://app.deepsource.com/gh/EdiJunior88/Casa_do_Codigo_VueJS.svg/?label=resolved+issues&show_trend=true&token=IifaCgfFTZc0H9ePELvPd24J)](https://app.deepsource.com/gh/EdiJunior88/Casa_do_Codigo_VueJS/)
+
+<hr>
+
 <h3>Tempo Estudando o livro</h3>
 
 <p>
@@ -156,4 +162,4 @@
 
 <hr>
 
-<h4><b>Status do Curso:</b> 💭 Estudando</h4>
+<h4><b>Status do Curso:</b> ✅ Completado</h4>
