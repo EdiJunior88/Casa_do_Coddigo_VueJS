@@ -1,12 +1,16 @@
 <script setup lang="js">
 import { computed } from 'vue'
+import { useTaskStore } from '@/store/index'
 
 // A função defineProps é usada para definir as
 // propriedades esperadas no componente. Neste caso,
 // espera-se uma propriedade chamada todoList do tipo Array
-const props = defineProps({
+defineProps({
   todoList: Array
 })
+
+// Utilizando a Store da Pinia
+const taskStore = useTaskStore()
 
 // Aqui, computed é usada para criar uma propriedade computada
 // chamada sortedTasks. Esta propriedade retorna o array todoList
@@ -14,24 +18,23 @@ const props = defineProps({
 const sortedTasks = computed(() => {
   // Verifica se a propriedade todoList existe e se é um array,
   // Caso não exista ou seja um array vazio, retorna uma lista vazia
-  if (!props.todoList || !Array.isArray(props.todoList)) {
+  if (!taskStore.tasks || !Array.isArray(taskStore.tasks)) {
     return []
   }
 
-  // A função recebe uma lista (props.todoList) de tarefas
-  // e ordena alfabeticamente por título (title) de cada objeto na lista
-  const sorted = props.todoList
-  return sorted.sort(function (a, b) {
+  // Sorteando a lista de tarefas da Store (Pinia)
+  const sorted = [...taskStore.tasks]
+  return sorted.sort((a, b) => {
     if (a.title < b.title) return -1
     if (a.title > b.title) return 1
     return 0
   })
 })
 
-// A função recebe uma tarefa (task) e a altera de acordo com o argumento
-// completando ou não a tarefa (alternando o estado)
+// Atualização da função completeTasks
+// para usar o "action" da Store
 function completeTasks(task) {
-  task.completed = !task.completed
+  taskStore.completeTask(task)
 }
 </script>
 
@@ -39,17 +42,17 @@ function completeTasks(task) {
   <ul class="list-none -mt-1.5 p-0">
     <TransitionGroup name="list">
       <li
-        v-for="todo in sortedTasks"
-        :key="todo"
+        v-for="task in sortedTasks"
+        :key="task.id"
         class="w-full relative m-0 -mt-1 text-2xl font-normal bg-white text-violet-900 py-4 border border-solid border-gray-200 first:border-t-0 last:border-b-0 shadow-lg rounded-b-md focus:outline-gray-100 focus:ring focus:ring-gray-100"
       >
         <div class="flex items-center">
           <input
             type="checkbox"
             class="toggle ml-4 mr-3 border border-solid border-gray-500"
-            @click="completeTasks(todo)"
+            @click="completeTasks(task)"
           />
-          <label :class="{ 'todo-completed': todo.completed }">{{ todo.title }}</label>
+          <label :class="{ 'todo-completed': task.completed }">{{ task.title }}</label>
         </div>
       </li>
     </TransitionGroup>

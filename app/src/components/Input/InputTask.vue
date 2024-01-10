@@ -1,5 +1,6 @@
 <script setup lang="js">
 import { Task } from '@/models/Task'
+import { useTaskStore } from '@/store/index'
 
 // A função defineProps define as propriedades
 // que serão passadas ao componente.
@@ -12,14 +13,19 @@ defineProps({
 // A função defineEmits é usada para definir os eventos
 // que o componente pode emitir. Neste caso, o componente
 // pode emitir um evento chamado newTask
-const emits = defineEmits(['newTask'])
+defineEmits(['newTask'])
+
+// Utilizando a Store da Pinia
+const taskStore = useTaskStore()
 
 // A função addTask é definida para adicionar uma nova tarefa.
+// As tarefas são adicionadas na taskStore.
 function addTask(event) {
   const value = event.target.value
   const task = createTask(value)
-  broadcast(task)
+  taskStore.addTask(task)
   clearField(event)
+  // console.log('addTask', task)
 }
 
 // A função createTask é usada para criar uma nova tarefa.
@@ -27,6 +33,7 @@ function createTask(value) {
   const task = new Task()
   task.completed = false
   task.title = value
+  // console.log('createTask', task)
   return task
 }
 
@@ -35,11 +42,6 @@ function clearField(event) {
   if (event) {
     event.target.value = ''
   }
-}
-
-// A função broadcast é usada para avisar sobre uma nova tarefa.
-function broadcast(task) {
-  emits('newTask', task)
 }
 
 // Define uma diretiva Vue chamada vFocus que automaticamente coloca o foco

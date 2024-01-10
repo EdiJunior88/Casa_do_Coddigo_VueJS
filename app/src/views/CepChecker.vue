@@ -9,10 +9,15 @@ const address = ref({})
 // Cria uma variável reativa para armazenar uma mensagem de erro (API)
 const errorMessageAPI = ref('')
 
+// Função para aplicar a mascara de CEP
 function maskCep(value) {
-  return value
-    .replace(/\D/g, '') // Remove tudo o que não é dígito
-    .replace(/^(\d{5})(\d)/, '$1-$2') // Insere o hífen
+  return (
+    value
+      // Remove tudo o que não é dígito
+      .replace(/\D/g, '')
+      // Insere o hífen
+      .replace(/^(\d{5})(\d)/, '$1-$2')
+  )
 }
 
 // Define uma função assíncrona para verificar o CEP
@@ -25,7 +30,8 @@ async function checkCep(event) {
   event.target.value = value // Atualiza o valor do input com a máscara aplicada
 
   try {
-    const data = await apiCep(value.replace('-', '')) // Remove o hífen antes de enviar
+    // Remove o hífen antes de enviar a requisição
+    const data = await apiCep(value.replace('-', ''))
 
     // Se o CEP for inválido lança um erro
     if (!data || Object.keys(data).length === 0) {
