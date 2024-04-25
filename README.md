@@ -12,6 +12,7 @@
 <hr>
 
 <strong>Link do livro (Português): </strong><a href="https://www.casadocodigo.com.br/products/livro-vue">https://www.casadocodigo.com.br/products/livro-vue</a>
+<strong>Link do site: </strong><a href="https://edijunior88-casadocodigo-vuejs.netlify.app/">https://edijunior88-casadocodigo-vuejs.netlify.app/</a>
 
 <hr>
 
@@ -159,7 +160,7 @@ Para ver todas as tecnologias [clique aqui](/techstack.md)
 
 <h3>Status do Deploy</h3>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9473effc-c790-45b0-9883-a82e86294ef4/deploy-status)](https://app.netlify.com/sites/casa-do-codigo-vuejs/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc66cddf-7bce-4497-b128-844b4331c04c/deploy-status)](https://app.netlify.com/sites/edijunior88-casadocodigo-vuejs/deploys)
 
 <hr>
 
