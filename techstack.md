@@ -40,13 +40,16 @@ Full tech stack [here](/techstack.md)
 <div align="center">
 
 # Tech Stack File
+
 ![](https://img.stackshare.io/repo.svg "repo") [EdiJunior88/Casa_do_Codigo_VueJS](https://github.com/EdiJunior88/Casa_do_Codigo_VueJS)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
 |21<br/>Tools used|05/02/24 <br/>Report generated|
 |------|------|
+
 </div>
 
 ## <img src='https://img.stackshare.io/languages.svg'/> Languages (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/6727/css.png' alt='CSS 3'>
@@ -68,6 +71,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/frameworks.svg'/> Frameworks (4)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png' alt='Autoprefixer'>
@@ -105,6 +109,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/devops.svg'/> DevOps (6)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'>
@@ -158,6 +163,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## Other (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/48301/default_0cffd727391e16b2a8bd6edbcffc0255a3a541d0.png' alt='Pinia'>
@@ -178,20 +184,19 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-
 ## <img src='https://img.stackshare.io/group.svg' /> Open source packages (7)</h2>
 
 ## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (7)
 
-|NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
-|:------|:------|:------|:------|:------|:------|
-|[@vue/eslint-config-prettier](https://www.npmjs.com/@vue/eslint-config-prettier)|v9.0.0|04/24/24|dependabot[bot] |MIT|N/A|
-|[@vue/test-utils](https://www.npmjs.com/@vue/test-utils)|v2.4.5|04/24/24|dependabot[bot] |MIT|N/A|
-|[eslint-plugin-vue](https://www.npmjs.com/eslint-plugin-vue)|v9.25.0|04/24/24|dependabot[bot] |MIT|N/A|
-|[tailwindcss](https://www.npmjs.com/tailwindcss)|v3.4.3|04/01/24|dependabot[bot] |MIT|N/A|
-|[vite](https://www.npmjs.com/vite)|v5.2.10|04/24/24|dependabot[bot] |N/A|N/A|
-|[vue](https://www.npmjs.com/vue)|v3.4.25|10/19/23|Edivaldo Junior |MIT|N/A|
-|[vue-router](https://www.npmjs.com/vue-router)|v4.3.2|04/22/24|dependabot[bot] |MIT|N/A|
+| NAME                                                                             | VERSION | LAST UPDATED | LAST UPDATED BY | LICENSE | VULNERABILITIES |
+| :------------------------------------------------------------------------------- | :------ | :----------- | :-------------- | :------ | :-------------- |
+| [@vue/eslint-config-prettier](https://www.npmjs.com/@vue/eslint-config-prettier) | v9.0.0  | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [@vue/test-utils](https://www.npmjs.com/@vue/test-utils)                         | v2.4.5  | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [eslint-plugin-vue](https://www.npmjs.com/eslint-plugin-vue)                     | v9.25.0 | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [tailwindcss](https://www.npmjs.com/tailwindcss)                                 | v3.4.3  | 04/01/24     | dependabot[bot] | MIT     | N/A             |
+| [vite](https://www.npmjs.com/vite)                                               | v5.2.10 | 04/24/24     | dependabot[bot] | N/A     | N/A             |
+| [vue](https://www.npmjs.com/vue)                                                 | v3.4.25 | 10/19/23     | Edivaldo Junior | MIT     | N/A             |
+| [vue-router](https://www.npmjs.com/vue-router)                                   | v4.3.2  | 04/22/24     | dependabot[bot] | MIT     | N/A             |
 
 <br/>
 <div align='center'>
