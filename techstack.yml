@@ -1,8 +1,8 @@
 repo_name: EdiJunior88/Casa_do_Codigo_VueJS
-report_id: 1f663ed8f9f62d9dfc07606ecbcf5af9
+report_id: 0e111984450fc953a903af7a4f65ba09
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-04T14:37:26+00:00'
+timestamp: '2024-05-02T15:30:47+00:00'
 requested_by: EdiJunior88
 provider: github
 branch: main
@@ -39,8 +39,8 @@ tools:
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package.json
   detection_source: app/package.json
-  last_updated_by: Edivaldo Junior
-  last_updated_on: 2023-10-20 23:55:41.000000000 Z
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-03-25 10:03:40.000000000 Z
 - name: PostCSS
   description: Transform CSS with JS plugins
   website_url: https://github.com/postcss/postcss
@@ -66,11 +66,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-08 09:32:41.000000000 Z
+  last_updated_on: 2024-04-01 09:35:42.000000000 Z
 - name: Vue.js
   description: A progressive framework for building user interfaces
   website_url: http://vuejs.org/
-  version: 3.3.13
+  version: 3.4.25
   license: MIT
   open_source: true
   hosted_saas: false
@@ -105,9 +105,9 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS
   detection_source: Repo Metadata
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
-  version: 3.2.4
+  version: 3.2.5
   license: MIT
   open_source: true
   hosted_saas: false
@@ -117,7 +117,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-15 09:49:51.000000000 Z
+  last_updated_on: 2024-02-05 09:18:27.000000000 Z
 - name: Vite
   description: Native-ESM powered web dev build tool
   website_url: https://vitejs.dev/
@@ -171,7 +171,7 @@ tools:
 - name: axios
   description: Promise based HTTP client for the browser and node.js
   website_url: https://github.com/mzabriskie/axios
-  version: 1.6.7
+  version: 1.6.8
   license: MIT
   open_source: true
   hosted_saas: false
@@ -181,7 +181,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 10:01:59.000000000 Z
+  last_updated_on: 2024-03-25 10:04:07.000000000 Z
 - name: "@vue/eslint-config-prettier"
   description: Eslint-config-prettier for Vue CLI
   package_url: https://www.npmjs.com/@vue/eslint-config-prettier
@@ -195,11 +195,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 10:01:53.000000000 Z
+  last_updated_on: 2024-04-24 21:44:21.000000000 Z
 - name: "@vue/test-utils"
   description: Utilities for testing Vue components
   package_url: https://www.npmjs.com/@vue/test-utils
-  version: 2.4.4
+  version: 2.4.5
   license: MIT
   open_source: true
   hosted_saas: false
@@ -209,11 +209,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 10:01:14.000000000 Z
+  last_updated_on: 2024-04-24 21:44:03.000000000 Z
 - name: eslint-plugin-vue
   description: Official ESLint plugin for Vue.js
   package_url: https://www.npmjs.com/eslint-plugin-vue
-  version: 9.20.1
+  version: 9.25.0
   license: MIT
   open_source: true
   hosted_saas: false
@@ -223,11 +223,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 10:01:53.000000000 Z
+  last_updated_on: 2024-04-24 21:44:21.000000000 Z
 - name: tailwindcss
   description: A utility-first CSS framework for rapidly building custom user interfaces
   package_url: https://www.npmjs.com/tailwindcss
-  version: 3.4.1
+  version: 3.4.3
   license: MIT
   open_source: true
   hosted_saas: false
@@ -237,11 +237,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-08 09:32:41.000000000 Z
+  last_updated_on: 2024-04-01 09:35:42.000000000 Z
 - name: vite
   description: Native-ESM powered web dev build tool
   package_url: https://www.npmjs.com/vite
-  version: 5.0.12
+  version: 5.2.10
   open_source: false
   hosted_saas: false
   category: Build, Test, Deploy
@@ -250,11 +250,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 10:01:14.000000000 Z
+  last_updated_on: 2024-04-24 21:44:03.000000000 Z
 - name: vue
   description: Vue
   package_url: https://www.npmjs.com/vue
-  version: 3.3.13
+  version: 3.4.25
   license: MIT
   open_source: true
   hosted_saas: false
@@ -268,7 +268,7 @@ tools:
 - name: vue-router
   description: Official router for Vue.js 2
   package_url: https://www.npmjs.com/vue-router
-  version: 4.2.5
+  version: 4.3.2
   license: MIT
   open_source: true
   hosted_saas: false
@@ -277,5 +277,5 @@ tools:
   image_url: https://img.stackshare.io/package/15969/default_261820f5687b4c88a3e8f95c71b5e8dccd34c1d7.png
   detection_source_url: https://github.com/EdiJunior88/Casa_do_Codigo_VueJS/blob/main/app/package-lock.json
   detection_source: app/package.json
-  last_updated_by: EdiJunior88
-  last_updated_on: 2024-01-04 23:26:37.000000000 Z
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-04-22 09:54:31.000000000 Z

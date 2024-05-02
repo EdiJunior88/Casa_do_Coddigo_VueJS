@@ -5,14 +5,14 @@ EdiJunior88/Casa_do_Codigo_VueJS is built on the following main stack:
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - [Autoprefixer](https://github.com/postcss/autoprefixer) – CSS Pre-processors / Extensions
-- [ESLint](http://eslint.org/) – Code Review
 - [PostCSS](https://github.com/postcss/postcss) – CSS Pre-processors / Extensions
-- [Vue.js](http://vuejs.org/) – Javascript UI Libraries
-- [axios](https://github.com/mzabriskie/axios) – Javascript Utilities & Libraries
-- [Prettier](https://prettier.io/) – Code Review
-- [jsdom](https://github.com/jsdom/jsdom) – Headless Browsers
 - [Tailwind CSS](https://tailwindcss.com) – Front-End Frameworks
+- [Vue.js](http://vuejs.org/) – Javascript UI Libraries
+- [ESLint](http://eslint.org/) – Code Review
+- [Prettier](https://prettier.io/) – Code Review
 - [Vite](https://vitejs.dev/) – JS Build Tools / JS Task Runners
+- [jsdom](https://github.com/jsdom/jsdom) – Headless Browsers
+- [axios](https://github.com/mzabriskie/axios) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -24,14 +24,14 @@ EdiJunior88/Casa_do_Codigo_VueJS is built on the following main stack:
 
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png' alt='Autoprefixer'/> [Autoprefixer](https://github.com/postcss/autoprefixer) – CSS Pre-processors / Extensions
-- <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/3339/rlFcjEdI.png' alt='PostCSS'/> [PostCSS](https://github.com/postcss/postcss) – CSS Pre-processors / Extensions
-- <img width='25' height='25' src='https://img.stackshare.io/service/3837/paeckCWC.png' alt='Vue.js'/> [Vue.js](http://vuejs.org/) – Javascript UI Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/no-img-open-source.png' alt='axios'/> [axios](https://github.com/mzabriskie/axios) – Javascript Utilities & Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
-- <img width='25' height='25' src='https://img.stackshare.io/service/7054/preview.jpeg' alt='jsdom'/> [jsdom](https://github.com/jsdom/jsdom) – Headless Browsers
 - <img width='25' height='25' src='https://img.stackshare.io/service/8158/default_660b7c41c3ba489cb581eec89c04655404258c19.png' alt='Tailwind CSS'/> [Tailwind CSS](https://tailwindcss.com) – Front-End Frameworks
+- <img width='25' height='25' src='https://img.stackshare.io/service/3837/paeckCWC.png' alt='Vue.js'/> [Vue.js](http://vuejs.org/) – Javascript UI Libraries
+- <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg' alt='Prettier'/> [Prettier](https://prettier.io/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png' alt='Vite'/> [Vite](https://vitejs.dev/) – JS Build Tools / JS Task Runners
+- <img width='25' height='25' src='https://img.stackshare.io/service/7054/preview.jpeg' alt='jsdom'/> [jsdom](https://github.com/jsdom/jsdom) – Headless Browsers
+- <img width='25' height='25' src='https://img.stackshare.io/no-img-open-source.png' alt='axios'/> [axios](https://github.com/mzabriskie/axios) – Javascript Utilities & Libraries
 
 Full tech stack [here](/techstack.md)
 
@@ -43,7 +43,7 @@ Full tech stack [here](/techstack.md)
 
 ![](https://img.stackshare.io/repo.svg "repo") [EdiJunior88/Casa_do_Codigo_VueJS](https://github.com/EdiJunior88/Casa_do_Codigo_VueJS)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|21<br/>Tools used|02/04/24 <br/>Report generated|
+|21<br/>Tools used|05/02/24 <br/>Report generated|
 |------|------|
 
 </div>
@@ -102,7 +102,7 @@ Full tech stack [here](/techstack.md)
   <br>
   <sub><a href="http://vuejs.org/">Vue.js</a></sub>
   <br>
-  <sub>v3.3.13</sub>
+  <sub>v3.4.25</sub>
 </td>
 
 </tr>
@@ -132,7 +132,7 @@ Full tech stack [here](/techstack.md)
   <br>
   <sub><a href="https://prettier.io/">Prettier</a></sub>
   <br>
-  <sub>v3.2.4</sub>
+  <sub>v3.2.5</sub>
 </td>
 
 <td align='center'>
@@ -178,7 +178,7 @@ Full tech stack [here](/techstack.md)
   <br>
   <sub><a href="https://github.com/mzabriskie/axios">axios</a></sub>
   <br>
-  <sub>v1.6.7</sub>
+  <sub>v1.6.8</sub>
 </td>
 
 </tr>
@@ -190,13 +190,13 @@ Full tech stack [here](/techstack.md)
 
 | NAME                                                                             | VERSION | LAST UPDATED | LAST UPDATED BY | LICENSE | VULNERABILITIES |
 | :------------------------------------------------------------------------------- | :------ | :----------- | :-------------- | :------ | :-------------- |
-| [@vue/eslint-config-prettier](https://www.npmjs.com/@vue/eslint-config-prettier) | v9.0.0  | 01/29/24     | dependabot[bot] | MIT     | N/A             |
-| [@vue/test-utils](https://www.npmjs.com/@vue/test-utils)                         | v2.4.4  | 01/29/24     | dependabot[bot] | MIT     | N/A             |
-| [eslint-plugin-vue](https://www.npmjs.com/eslint-plugin-vue)                     | v9.20.1 | 01/29/24     | dependabot[bot] | MIT     | N/A             |
-| [tailwindcss](https://www.npmjs.com/tailwindcss)                                 | v3.4.1  | 01/08/24     | dependabot[bot] | MIT     | N/A             |
-| [vite](https://www.npmjs.com/vite)                                               | v5.0.12 | 01/29/24     | dependabot[bot] | N/A     | N/A             |
-| [vue](https://www.npmjs.com/vue)                                                 | v3.3.13 | 10/19/23     | Edivaldo Junior | MIT     | N/A             |
-| [vue-router](https://www.npmjs.com/vue-router)                                   | v4.2.5  | 01/04/24     | EdiJunior88     | MIT     | N/A             |
+| [@vue/eslint-config-prettier](https://www.npmjs.com/@vue/eslint-config-prettier) | v9.0.0  | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [@vue/test-utils](https://www.npmjs.com/@vue/test-utils)                         | v2.4.5  | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [eslint-plugin-vue](https://www.npmjs.com/eslint-plugin-vue)                     | v9.25.0 | 04/24/24     | dependabot[bot] | MIT     | N/A             |
+| [tailwindcss](https://www.npmjs.com/tailwindcss)                                 | v3.4.3  | 04/01/24     | dependabot[bot] | MIT     | N/A             |
+| [vite](https://www.npmjs.com/vite)                                               | v5.2.10 | 04/24/24     | dependabot[bot] | N/A     | N/A             |
+| [vue](https://www.npmjs.com/vue)                                                 | v3.4.25 | 10/19/23     | Edivaldo Junior | MIT     | N/A             |
+| [vue-router](https://www.npmjs.com/vue-router)                                   | v4.3.2  | 04/22/24     | dependabot[bot] | MIT     | N/A             |
 
 <br/>
 <div align='center'>
